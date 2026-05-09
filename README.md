@@ -60,7 +60,7 @@ flowchart LR
 │   ├── 05_vector_stores.py
 │   └── 06_retrievers.py
 ├── requirements.txt
-├── ARCHITECTURE.md
+├── architecture.md
 └── README.md
 ```
 
