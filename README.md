@@ -123,20 +123,6 @@ The RAG pipeline is implemented in `app/rag_pipeline.py`:
 6. LangChain's `RetrievalQA` chain sends the retrieved context and question to the LLM.
 7. The model returns an answer grounded in the uploaded document.
 
-## Learning Notebooks
-
-The `notebooks/` folder contains the original step-by-step labs:
-
-- Document loading across TXT, PDF, Markdown, JSON, CSV, web, and DOCX
-- Context-window limitations of whole-document prompting
-- Text splitting strategies for RAG
-- Watsonx and Hugging Face embeddings
-- Chroma and FAISS vector stores
-- Retriever strategies including MMR, multi-query, self-querying, and parent-document retrieval
-- Gradio interfaces for LLM apps
-
-The `scripts/` folder contains cleaned standalone Python examples based on those notebooks for easier code review, search, and GitHub browsing.
-
 ## Example Questions
 
 After uploading a technical PDF, try questions like:
@@ -156,7 +142,7 @@ After uploading a technical PDF, try questions like:
 - Package the app with Docker
 - Deploy the demo to Hugging Face Spaces, IBM Code Engine, or another hosted runtime
 
-## Portfolio Note
+## Project Takeaway
 
 This project demonstrates the full RAG workflow: ingestion, chunking, embedding, vector search, retrieval, answer generation, and UI integration.
 
