@@ -2,7 +2,7 @@
 
 A retrieval-augmented generation app that lets users upload PDFs and ask questions answered from document context using LangChain, IBM watsonx.ai, Chroma, and Gradio.
 
-This repository started as a set of hands-on labs about document loading, chunking, embeddings, vector databases, retrievers, and model interfaces. It has been restructured into a portfolio-ready project with the final RAG application at the top level and the original notebooks preserved as supporting learning material.
+This repository presents a portfolio-ready RAG application with a runnable PDF question-answering interface, cleaned example scripts, sample documents, and concise architecture documentation.
 
 ## Demo
 
@@ -32,7 +32,7 @@ flowchart LR
 - Embed chunks with IBM watsonx.ai Slate embeddings
 - Store vectors in Chroma for semantic retrieval
 - Answer questions using a Watsonx Granite instruct model
-- Keep the original lab notebooks as reproducible learning references
+- Include cleaned standalone examples for each major RAG concept
 
 ## Tech Stack
 
@@ -52,6 +52,8 @@ flowchart LR
 │   ├── main.py            # Gradio app entry point
 │   ├── rag_pipeline.py    # PDF loading, chunking, embeddings, retrieval, QA
 │   └── ui.py              # Gradio interface
+├── data/                  # Sample documents used by scripts
+│   └── sample_documents/
 ├── scripts/               # Cleaned standalone Python examples
 │   ├── 01_document_loaders.py
 │   ├── 02_context_window_limits.py
